@@ -1,0 +1,11 @@
+.card {
+  background-color: #fff;
+  padding: .8rem
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+  margin: -0.8rem -0.8rem 0.8rem;
+  padding: .8rem;
+}
