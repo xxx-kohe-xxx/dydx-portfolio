@@ -4,6 +4,7 @@ import './styles.css';
 interface Props {
   children: React.ReactNode;
   className?: string;
+  onClick?: (event: MouseEvent) => void;
 }
 
 const Button: FC<Props> = ({ children, className}) => {
