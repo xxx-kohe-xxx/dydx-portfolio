@@ -1,0 +1,9 @@
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.textbox {
+  flex: 6;
+  margin-right: 0.8rem;
+}
