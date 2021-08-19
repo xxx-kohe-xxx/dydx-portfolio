@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   children: React.ReactNodeArray;
@@ -8,8 +8,8 @@ interface Props {
 const StickyHeaderLayout: FC<Props> = ({ children }) => {
   return (
     <div>
-      <div className='sticky'>{children[0]}</div>
-      <div className='body'>{children[1]}</div>
+      <div className={styles.sticky}>{children[0]}</div>
+      <div className={styles.body}>{children[1]}</div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ interface Props {
 
 const Card: FC<Props> = ({ children, className }) => {
   return (
-    <section className={['card', className].join(' ')}>
+    <section className={[styles.card, className].join(' ')}>
       {children}
     </section>
   )
@@ -18,7 +18,7 @@ export default Card;
 
 export const CardHeader: FC<Props> = ({ children, className}) => {
   return (
-    <div className={['header', className].join(' ')}>
+    <div className={[styles.header, className].join(' ')}>
       {children}
     </div>
   )

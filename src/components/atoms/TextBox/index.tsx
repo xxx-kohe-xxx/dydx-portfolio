@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   className?: string;
@@ -7,7 +7,7 @@ interface Props {
 
 const TextBox: FC<Props> = ({ className }) => {
   return (
-    <input type="text" className={['textbox', className].join(' ')} />
+    <input type="text" className={[styles.textbox, className].join(' ')} />
   )
 }
 

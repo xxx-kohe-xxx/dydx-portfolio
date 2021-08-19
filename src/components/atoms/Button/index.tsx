@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ interface Props {
 
 const Button: FC<Props> = ({ children, className}) => {
   return (
-    <button className={['button', className].join(' ')}>{children}</button>
+    <button className={[styles.button, className].join(' ')}>{children}</button>
   )
 }
 

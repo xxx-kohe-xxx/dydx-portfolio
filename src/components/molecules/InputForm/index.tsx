@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './styles.css';
+import styles from './styles.module.css';
 import TextBox from '../../atoms/TextBox';
 import Button from '../../atoms/Button';
 
@@ -9,8 +9,8 @@ interface Props {
 
 const InputForm: FC<Props> = ({ onSubmit }) => {
   return (
-    <form className='form'>
-      <TextBox className='textbox'/>
+    <form className={styles.form}>
+      <TextBox className={styles.textbox}/>
       <Button onClick={onSubmit}>追加</Button>
     </form>
   )

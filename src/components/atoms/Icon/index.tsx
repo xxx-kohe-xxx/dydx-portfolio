@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   height?: number;
@@ -23,7 +23,7 @@ export const CheckedIcon: FC<Props> = ({
       alt='check box'
       height={height}
       width={width}
-      className={['clickable', className].join(' ')}
+      className={[styles.clickable, className].join(' ')}
     />
   )
 }
@@ -39,7 +39,7 @@ export const BlankIcon: FC<Props> = ({
       alt='check box'
       height={height}
       width={width}
-      className={['clickable', className].join(' ')}
+      className={[styles.clickable, className].join(' ')}
     />
   )
 }
