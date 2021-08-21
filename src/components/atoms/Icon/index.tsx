@@ -1,10 +1,11 @@
-import React, { FC } from 'react';
+import React, { FC, MouseEventHandler } from 'react';
 import styles from './styles.module.css';
 
 interface Props {
   height?: number;
   width?: number;
   className?: string;
+  onClick?: MouseEventHandler<HTMLImageElement>;
 }
 
 enum IconType {
@@ -15,7 +16,8 @@ enum IconType {
 export const CheckedIcon: FC<Props> = ({
   height = 20,
   width = 20,
-  className
+  className,
+  onClick
 }) => {
   return (
     <img
@@ -23,6 +25,7 @@ export const CheckedIcon: FC<Props> = ({
       alt='check box'
       height={height}
       width={width}
+      onClick={onClick}
       className={[styles.clickable, className].join(' ')}
     />
   )
@@ -31,7 +34,8 @@ export const CheckedIcon: FC<Props> = ({
 export const BlankIcon: FC<Props> = ({
   height = 20,
   width = 20,
-  className
+  className,
+  onClick
 }) => {
   return (
     <img
@@ -39,6 +43,7 @@ export const BlankIcon: FC<Props> = ({
       alt='check box'
       height={height}
       width={width}
+      onClick={onClick}
       className={[styles.clickable, className].join(' ')}
     />
   )
