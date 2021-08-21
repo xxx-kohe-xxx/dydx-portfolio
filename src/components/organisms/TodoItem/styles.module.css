@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vh;
+}
+
+.icon {
+  padding-right: 0.8rem;
+}
+
+.title {
+  display: inline-block;
+  width: 90vh;
+  word-wrap: break-word;
+}
