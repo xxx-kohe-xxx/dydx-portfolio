@@ -44,13 +44,22 @@ const CheckBoxIconContainer: FC<ContainerProps> = ({
 interface Props {
   onClick?: MouseEventHandler<HTMLImageElement>;
   state: boolean;
+  className?: string;
 }
 
-const CheckBoxIcon: FC<Props> = ({ onClick, state }) => {
+const CheckBoxIcon: FC<Props> = ({
+  onClick,
+  state,
+  className
+}) => {
   return (
     <CheckBoxIconContainer
-      presenter={presenterProps => <CheckBoxIconPresenter {...presenterProps}
-      />}
+      presenter={presenterProps =>
+        <CheckBoxIconPresenter
+          className={className}
+          {...presenterProps}
+        />
+      }
       isChecked={state}
       onClick={onClick}
     />
