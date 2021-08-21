@@ -4,7 +4,7 @@ import TextBox from '../../atoms/TextBox';
 import Button from '../../atoms/Button';
 
 interface Props {
-  onSubmit: (event: MouseEvent) => void;
+  onSubmit: React.MouseEventHandler<HTMLImageElement>;
 }
 
 const InputForm: FC<Props> = ({ onSubmit }) => {
