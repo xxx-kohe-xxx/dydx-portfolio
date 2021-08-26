@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package todos;
+
+service TodoApp {
+  rpc CreateTodo (Todo) returns (Todo);
+  rpc GetAllTodos (Empty) returns (Todos);
+}
+
+message Todos {
+  repeated Todo todos = 1;
+}
+
+message Todo {
+  int32 id = 1;
+  string title = 2;
+  bool done = 3;
+}
+
+message Empty {
+
+}
