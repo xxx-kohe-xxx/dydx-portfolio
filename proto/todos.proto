@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package todos;
-
+option go_package = "dydx-portfolio/server/todos";
 service TodoApp {
   rpc CreateTodo (Todo) returns (Todo);
   rpc GetAllTodos (Empty) returns (Todos);
